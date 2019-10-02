@@ -1,0 +1,141 @@
+
+#Initial Commits
+mkdir git-basic-exercises
+cd git-basic-exercises
+ls -a
+git init
+ls -a
+git status
+ls -a
+git status
+git add README.md
+git status
+git rm README.md
+git status
+git add README.md
+git status
+git commit -m "initial commit"
+git log
+
+#More Commits
+git nano README.md 
+cat README.md
+git status
+git commit -m "second commit
+nano README.md 
+cat README.md
+git add README.md
+git commit -m "third commit"
+nano README.md
+cat README.md
+git add README.md
+
+#Check This Out
+git log
+git checkout
+git checkout f75aa0239395917847of8080fc2aa10b77ede3f59b
+cat README.md
+git checkout master
+cat README.md
+
+#Branching
+git branch
+git branch milkshake-flavours
+git branch
+git checkout milkshake-flavours
+git branch
+nano milkshakes.md
+git status
+git add milkshakes.md
+git commit -m "added initial flavours" > milkshakes.md
+git log
+git checkout master
+git brach history
+git checkout history
+git log
+history > history.txt
+git add history.txt
+git commit -m "added history"
+git add history.txt
+git log
+git checkout milkshake flavours
+git log
+nano README.md
+git add README.md
+git commit README.md
+git checkout history
+cat README.md
+git rm -f README.md
+echo "booya" >  README.md
+git add README.md
+git commit -m README.md
+
+#Just Make Sure We Still On Track
+git checkout master
+ls
+git log
+git checkout milkshake-flavours
+ls
+git log
+git checkout history
+ls
+git log
+
+#Merging
+git checkout master
+git merge milkshake-flavours
+ls
+git log
+git commit -m README.md
+git merge history
+ls
+git log
+git checkout history
+git log
+git checkout milkshake-flavours
+git log
+
+#GitHub
+git remote add origin https://github.com/Portia-arch/git-basic-exercises.git
+git push -u origin master
+
+#Pulling And Remotes
+cd
+git clone https://github.com/Umuzi-org/tech-department.git
+cd tech-department
+git branch
+git log
+git branch -a
+git checkout -b project/git-basic-exercises
+git remote -v
+
+#Multiple Repos
+cd ~/git-basic-exercises/
+git log
+cd 
+mkdir this-will-be-another-repo
+cd this-will-be-another-repo
+git init
+touch README.md
+git add README.md
+git commit -m "another one"
+git add README.md
+cd ~/git-basic-exercises/
+git log
+
+#Git Ignore
+touch ignore-me.db
+git status
+nano .gitignore
+git status
+mkdir large-directory-that-should-be-local-only
+cd large-directory-that-should-be-local-only
+nano readme.md
+cd ~/git-basic-exercises/
+git status
+nano .gitignore
+git status
+
+
+
+
